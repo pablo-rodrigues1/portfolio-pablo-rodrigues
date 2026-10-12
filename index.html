@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="escuro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Pablo Henrique Oliveira Rodrigues, estudante de Engenharia de Software e Técnico em Segurança do Trabalho.">
+  <meta name="author" content="Pablo Henrique Oliveira Rodrigues">
+  <title>Pablo Rodrigues | Portfólio</title>
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+
+  <a class="pular-conteudo" href="#sobre">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho com o menu. Ele fica fixo no topo, então aparece em todas as seções. -->
+  <header class="cabecalho" id="topo">
+    <div class="container cabecalho__interno">
+      <a class="marca" href="#sobre" aria-label="Pablo Rodrigues, voltar ao início">
+        <span class="marca__losango" aria-hidden="true"><span>PR</span></span>
+        <span class="marca__texto">
+          <span class="marca__nome">Pablo Rodrigues</span>
+          <span class="marca__legenda">Portfólio</span>
+        </span>
+      </a>
+
+      <button class="botao-menu" id="botao-menu" type="button"
+              aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="botao-menu__barra"></span>
+        <span class="botao-menu__barra"></span>
+        <span class="botao-menu__barra"></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <ul class="menu__lista">
+          <li><a class="menu__link" href="#sobre">Sobre mim</a></li>
+          <li><a class="menu__link" href="#formacao">Formação</a></li>
+          <li><a class="menu__link" href="#portfolio">Portfólio</a></li>
+          <li><a class="menu__link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="botao-tema" id="botao-tema" type="button" aria-pressed="true">
+        <span class="botao-tema__icone" aria-hidden="true">☀</span>
+        <span class="botao-tema__texto">Tema claro</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Seção 1: Sobre mim (apresentação, informações pessoais e interesses) -->
+    <section class="secao secao--abertura" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="container abertura">
+        <div class="abertura__texto">
+          <p class="sobretitulo">Olá, eu sou</p>
+          <h1 id="titulo-sobre">Pablo Henrique Oliveira Rodrigues</h1>
+          <p class="abertura__resumo">
+            Estudante de Engenharia de Software e Técnico em Segurança do Trabalho,
+            em transição de carreira para a área de Tecnologia.
+          </p>
+          <div class="abertura__acoes">
+            <a class="botao botao--primario" href="#portfolio">Ver meus projetos</a>
+            <a class="botao botao--secundario" href="#contato">Falar comigo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <dl class="ficha" aria-label="Informações pessoais">
+          <div class="ficha__item">
+            <dt>Cidade</dt>
+            <dd>Conselheiro Lafaiete – MG</dd>
+          </div>
+          <div class="ficha__item">
+            <dt>Curso</dt>
+            <dd>Engenharia de Software</dd>
+          </div>
+          <div class="ficha__item">
+            <dt>Atuação hoje</dt>
+            <dd>Técnico em Segurança do Trabalho</dd>
+          </div>
+          <div class="ficha__item">
+            <dt>GitHub</dt>
+            <dd>
+              <a href="https://github.com/pablo-rodrigues1" target="_blank" rel="noopener noreferrer">@pablo-rodrigues1</a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="container sobre-detalhes">
+        <article class="painel">
+          <header class="painel__cabecalho">
+            <h2>Quem sou</h2>
+          </header>
+          <p>
+            Sou um entusiasta de tecnologia e de psicologia. Minha formação é de
+            Técnico em Segurança do Trabalho, e é nessa área que atuo
+            profissionalmente hoje. O trabalho com prevenção me ensinou a
+            observar processos com atenção, antecipar riscos e seguir normas com
+            rigor — hábitos que levo comigo para o desenvolvimento de software.
+          </p>
+          <p>
+            Meu objetivo é migrar para a área de Tecnologia. Por isso curso
+            Engenharia de Software e, em paralelo, coloco a mão na massa: desenvolvo
+            sistemas para o Aetherius Roleplay, um servidor de Skyrim multiplayer
+            construído sobre o SkyMP, escrevendo código em C++, JavaScript e
+            TypeScript.
+          </p>
+        </article>
+
+        <article class="painel">
+          <header class="painel__cabecalho">
+            <h2>Interesses e hobbies</h2>
+          </header>
+          <ul class="lista-interesses">
+            <li>
+              <strong>Tecnologia</strong>
+              <span>Gosto de entender como os sistemas funcionam por dentro e de construir os meus.</span>
+            </li>
+            <li class="tinta--ouro">
+              <strong>Psicologia</strong>
+              <span>Tenho curiosidade sobre comportamento humano e sobre como as pessoas tomam decisões.</span>
+            </li>
+            <li class="tinta--azul">
+              <strong>Jogos e modding</strong>
+              <span>Criar sistemas de gameplay para Skyrim multiplayer é meu principal projeto pessoal.</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <div class="ornamento" aria-hidden="true"><i></i><b></b><i></i></div>
+
+    <!-- Seção 2: Formação (cursos, tecnologias e idiomas) -->
+    <section class="secao" id="formacao" aria-labelledby="titulo-formacao">
+      <div class="container">
+        <header class="secao__cabecalho tinta--ouro">
+          <div>
+            <p class="sobretitulo">Trajetória</p>
+            <h2 id="titulo-formacao">Formação</h2>
+            <p>Da segurança do trabalho ao desenvolvimento de software.</p>
+          </div>
+        </header>
+
+        <ol class="linha-tempo">
+          <li class="linha-tempo__item">
+            <span class="etiqueta etiqueta--ativa"><i class="ponto"></i>Em andamento</span>
+            <h3>Engenharia de Software</h3>
+            <p class="linha-tempo__local">Centro Universitário Internacional UNINTER</p>
+            <p>
+              Graduação voltada a todo o ciclo de construção de software:
+              programação, modelagem, qualidade e gestão de projetos. Este
+              portfólio é a atividade prática da disciplina Fundamentos da
+              Programação Web.
+            </p>
+          </li>
+          <li class="linha-tempo__item">
+            <span class="etiqueta"><i class="ponto"></i>Concluído em 2023</span>
+            <h3>Técnico em Segurança do Trabalho</h3>
+            <p class="linha-tempo__local">Formação técnica e profissão atual</p>
+            <p>
+              Base da minha atuação profissional: identificação e prevenção de
+              riscos, aplicação de normas e orientação de equipes.
+            </p>
+          </li>
+        </ol>
+
+        <div class="grade-duas">
+          <article class="painel">
+            <header class="painel__cabecalho">
+              <h3>Tecnologias que pratico</h3>
+            </header>
+            <p>Usadas nos projetos publicados no meu GitHub e neste site.</p>
+            <ul class="lista-etiquetas">
+              <li>Python</li>
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Git e GitHub</li>
+              <li>CMake</li>
+            </ul>
+          </article>
+
+          <article class="painel tinta--ouro">
+            <header class="painel__cabecalho">
+              <h3>Idiomas</h3>
+            </header>
+            <ul class="lista-idiomas">
+              <li>
+                <span class="lista-idiomas__nome">Português</span>
+                <span class="lista-idiomas__nivel">Nativo</span>
+                <span class="escala" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+              </li>
+              <li>
+                <span class="lista-idiomas__nome">Inglês</span>
+                <span class="lista-idiomas__nivel">Avançado</span>
+                <span class="escala" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="ornamento" aria-hidden="true"><i></i><b></b><i></i></div>
+
+    <!-- Seção 3: Portfólio (cada cartão tem o link de um projeto no GitHub) -->
+    <section class="secao" id="portfolio" aria-labelledby="titulo-portfolio">
+      <div class="container">
+        <header class="secao__cabecalho tinta--rubro">
+          <div>
+            <p class="sobretitulo">Trabalhos realizados</p>
+            <h2 id="titulo-portfolio">Portfólio</h2>
+            <p>
+              Projetos públicos no meu GitHub: um trabalho da graduação e os
+              sistemas do Aetherius, feitos para servidores de Skyrim multiplayer
+              (SkyMP).
+            </p>
+          </div>
+        </header>
+
+        <ul class="grade-projetos">
+          <li class="projeto tinta--ouro">
+            <div class="projeto__topo">
+              <span class="etiqueta"><i class="ponto"></i>Python</span>
+            </div>
+            <h3>Lógica de Programação — Trabalho Prático</h3>
+            <p>Quatro programas de terminal da graduação: cálculo de plano por faixa etária, pedidos de pizzaria, orçamento de madeireira e lista de contatos.</p>
+            <a class="projeto__link" href="https://github.com/pablo-rodrigues1/logica-de-programacao-trabalho-pratico" target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="apenas-leitor"> o trabalho prático de Lógica de Programação</span></a>
+          </li>
+          <li class="projeto">
+            <div class="projeto__topo">
+              <span class="etiqueta"><i class="ponto"></i>JavaScript</span>
+            </div>
+            <h3>Aetherius Gameplay Core</h3>
+            <p>Monorepo que reúne os sistemas de gameplay do Aetherius Roleplay para que evoluam de forma coordenada.</p>
+            <a class="projeto__link" href="https://github.com/pablo-rodrigues1/AetheriusGameplayCore" target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="apenas-leitor"> o projeto Aetherius Gameplay Core</span></a>
+          </li>
+          <li class="projeto">
+            <div class="projeto__topo">
+              <span class="etiqueta"><i class="ponto"></i>C++</span>
+            </div>
+            <h3>Aetherius UI Core</h3>
+            <p>Interface modular com shell persistente, HUD e um protocolo versionado entre cliente e servidor.</p>
+            <a class="projeto__link" href="https://github.com/pablo-rodrigues1/AetheriusUI_Core" target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="apenas-leitor"> o projeto Aetherius UI Core</span></a>
+          </li>
+          <li class="projeto tinta--roxo">
+            <div class="projeto__topo">
+              <span class="etiqueta"><i class="ponto"></i>TypeScript</span>
+            </div>
+            <h3>Aetherius Class System</h3>
+            <p>Sistema de 18 classes com progressão, atributos, grupos e raids, integrado à interface do UI Core.</p>
+            <a class="projeto__link" href="https://github.com/pablo-rodrigues1/AetheriusClassSystem" target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="apenas-leitor"> o projeto Aetherius Class System</span></a>
+          </li>
+          <li class="projeto tinta--rubro">
+            <div class="projeto__topo">
+              <span class="etiqueta"><i class="ponto"></i>C++</span>
+            </div>
+            <h3>Aetherius Damage System</h3>
+            <p>Motor de combate experimental: curva de armadura, dano físico, maestrias e componentes mágicos.</p>
+            <a class="projeto__link" href="https://github.com/pablo-rodrigues1/AetheriusDamageSystem" target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="apenas-leitor"> o projeto Aetherius Damage System</span></a>
+          </li>
+          <li class="projeto tinta--rubro">
+            <div class="projeto__topo">
+              <span class="etiqueta"><i class="ponto"></i>JavaScript</span>
+            </div>
+            <h3>Aetherius Enemy System</h3>
+            <p>Descobre inimigos e dungeons do jogo e de mods e resolve spawns determinísticos, com leveling e loot.</p>
+            <a class="projeto__link" href="https://github.com/pablo-rodrigues1/AetheriusEnemySystem" target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="apenas-leitor"> o projeto Aetherius Enemy System</span></a>
+          </li>
+          <li class="projeto tinta--ouro">
+            <div class="projeto__topo">
+              <span class="etiqueta"><i class="ponto"></i>JavaScript</span>
+            </div>
+            <h3>Aetherius Leveling System</h3>
+            <p>Progressão de nível de classe e XP no lado do servidor, toda orientada a dados de configuração.</p>
+            <a class="projeto__link" href="https://github.com/pablo-rodrigues1/AetheriusLevelingSystem" target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="apenas-leitor"> o projeto Aetherius Leveling System</span></a>
+          </li>
+          <li class="projeto tinta--azul">
+            <div class="projeto__topo">
+              <span class="etiqueta"><i class="ponto"></i>JavaScript</span>
+            </div>
+            <h3>Aetherius Durability System</h3>
+            <p>Manutenção e desgaste de equipamentos com as regras decididas pelo servidor.</p>
+            <a class="projeto__link" href="https://github.com/pablo-rodrigues1/AetheriusDurabilitySystem" target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="apenas-leitor"> o projeto Aetherius Durability System</span></a>
+          </li>
+          <li class="projeto tinta--roxo">
+            <div class="projeto__topo">
+              <span class="etiqueta"><i class="ponto"></i>C++</span>
+            </div>
+            <h3>Compatibilidade Meridian Platform</h3>
+            <p>Estudo experimental de compatibilidade entre o Skyrim Platform e a interface Meridian.</p>
+            <a class="projeto__link" href="https://github.com/pablo-rodrigues1/CompatibilidadeMeridianPlatform" target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="apenas-leitor"> o projeto Compatibilidade Meridian Platform</span></a>
+          </li>
+        </ul>
+
+        <p class="portfolio__rodape">
+          Quer ver tudo?
+          <a href="https://github.com/pablo-rodrigues1?tab=repositories" target="_blank" rel="noopener noreferrer">Acesse meu perfil no GitHub</a>.
+        </p>
+      </div>
+    </section>
+
+    <div class="ornamento" aria-hidden="true"><i></i><b></b><i></i></div>
+
+    <!-- Seção 4: Contato (a validação do formulário é feita no js/script.js) -->
+    <section class="secao" id="contato" aria-labelledby="titulo-contato">
+      <div class="container contato">
+        <div class="contato__lateral tinta--azul">
+          <header class="secao__cabecalho">
+            <div>
+              <p class="sobretitulo">Vamos conversar</p>
+              <h2 id="titulo-contato">Contato</h2>
+              <p>
+                Preencha o formulário para me enviar uma mensagem. Se preferir, me
+                encontre no
+                <a href="https://github.com/pablo-rodrigues1" target="_blank" rel="noopener noreferrer">GitHub</a>.
+              </p>
+            </div>
+          </header>
+        </div>
+
+        <form class="formulario" id="formulario-contato" novalidate>
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name"
+                   placeholder="Seu nome" aria-describedby="erro-nome">
+            <p class="campo__erro" id="erro-nome" aria-live="polite"></p>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email"
+                   placeholder="usuario@dominio.com" aria-describedby="erro-email">
+            <p class="campo__erro" id="erro-email" aria-live="polite"></p>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6"
+                      placeholder="Escreva sua mensagem" aria-describedby="erro-mensagem"></textarea>
+            <p class="campo__erro" id="erro-mensagem" aria-live="polite"></p>
+          </div>
+
+          <button class="botao botao--primario" type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container rodape__interno">
+      <p>&copy; <span id="ano-atual">2026</span> Pablo Henrique Oliveira Rodrigues</p>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <!-- Janela de confirmação, que o JavaScript mostra depois do envio -->
+  <div class="modal" id="modal-sucesso" hidden>
+    <div class="modal__caixa" role="dialog" aria-modal="true"
+         aria-labelledby="modal-titulo" aria-describedby="modal-texto">
+      <h2 id="modal-titulo">Mensagem enviada com sucesso!</h2>
+      <p id="modal-texto">Obrigado pelo contato. Responderei assim que possível.</p>
+      <button class="botao botao--primario" id="modal-fechar" type="button">Fechar</button>
+    </div>
+  </div>
+
+</body>
+</html>
